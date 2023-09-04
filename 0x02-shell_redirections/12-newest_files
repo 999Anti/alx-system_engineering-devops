@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -n 11 | awk '{if (NR>1) print $NF}' 
+ls -t1 | head   
