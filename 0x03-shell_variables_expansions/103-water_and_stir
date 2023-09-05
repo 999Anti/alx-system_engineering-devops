@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$((ibase=water;obase=bestchol;$WATER+$STIR))" | dc
+echo "$WATER$STIR" | tr 'water' '01234' | tr -d '\n' | tr '01234' 'water' | tr 'A-Z' 'a-z'
